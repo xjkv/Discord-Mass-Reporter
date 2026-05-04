@@ -82,14 +82,14 @@ BREADCRUMBS = [7, 76, 101]   # Abuse / Verbal harassment
 ## Operational Workflow
 Upon execution, the framework performs the following sequence:
 
-1 - Menu Discovery — Issues GET /api/v9/reporting/menu/message to retrieve the reporting menu tree and validate root_node_id
-2 - Breadcrumb Verification — Walks the provided breadcrumb path, printing each node's key and header for operator confirmation
-3 - Payload Assembly — Constructs the JSON payload containing version, variant, language, breadcrumbs, guild_id, channel_id, and message_id
-4 - Token Distribution — Divides NUM_REPORTS evenly across all available tokens, allocating remainder to the first N tokens
-5 - Concurrent Execution — Spawns MAX_WORKERS threads; each thread iterates its assigned report quota with jittered delays (2-5s)
-6 - Rate Limit Mitigation — On HTTP 429, evaluates retry_after. If < 3600s, sleeps and retries once. If >= 3600s, marks token as cooled down for retry_after duration
-7 - Token Expiry Detection — On HTTP 401, flags the token as invalid and reports to the operator
-8 - Summary Reporting — Aggregates success/fail counts across all worker threads and displays final statistics
+- Menu Discovery — Issues GET /api/v9/reporting/menu/message to retrieve the reporting menu tree and validate root_node_id
+- Breadcrumb Verification — Walks the provided breadcrumb path, printing each node's key and header for operator confirmation
+- Payload Assembly — Constructs the JSON payload containing version, variant, language, breadcrumbs, guild_id, channel_id, and message_id
+- Token Distribution — Divides NUM_REPORTS evenly across all available tokens, allocating remainder to the first N tokens
+- Concurrent Execution — Spawns MAX_WORKERS threads; each thread iterates its assigned report quota with jittered delays (2-5s)
+- Rate Limit Mitigation — On HTTP 429, evaluates retry_after. If < 3600s, sleeps and retries once. If >= 3600s, marks token as cooled down for retry_after duration
+- Token Expiry Detection — On HTTP 401, flags the token as invalid and reports to the operator
+- Summary Reporting — Aggregates success/fail counts across all worker threads and displays final statistics
 
 ## API Internals
 The framework targets Discord's internal reporting API:
