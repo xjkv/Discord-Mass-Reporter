@@ -46,13 +46,13 @@ BANNER = r"""
 print(BANNER)
 # PUT MULTIPLE TOKENS HERE — one per line
 TOKENS = [
-    "MTM5OTE1NjQ5MTY1ODk4OTc1Mg.GYAhPL.6jtRe6C4jS4Oj9J8JpDiIJivk4IhAEXeAldi9Q",
+    "token_id",
     # Add more tokens here, I recommend you to use atleast ten, buy tokens its cheap as fuck..
 ]
 
-GUILD_ID = "1379444359505641542"
-CHANNEL_ID = "1379447064894767134"
-MESSAGE_ID = "1483214816398016512"
+GUILD_ID = "server_id"
+CHANNEL_ID = "channel_id"
+MESSAGE_ID = "message_id"
 NUM_REPORTS = 5  # Total reports across all tokens
 
 # CORRECTED breadcrumbs based on your fetch output:
