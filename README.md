@@ -58,8 +58,7 @@ python main.py
 
 ## Breadcrumb Reference
 Discord's internal reporting menu is structured as a tree of integer node IDs. Below are the validated breadcrumb paths for each report category:
-
-Category	Breadcrumb Path
+```
 Spam:	[7, 98]
 Abuse / Verbal harassment:	[7, 76, 101]
 Abuse / Hate identity:	[7, 76, 107]
@@ -73,6 +72,7 @@ Something else / Scam:	[7, 80, 121, 167]
 Something else / Stolen accounts:	[7, 80, 123]
 Something else / Illicit goods:	[7, 80, 124]
 Something else / Hacks cheats:	[7, 80, 126]
+```
 
 Set BREADCRUMBS in main.py to your desired value:
 ```python
