@@ -31,7 +31,7 @@ pip3 install requests
 
 -Clone the repository and navigate to the project root:
 ```bash
-git clone https://github.com/YOUR_USERNAME/Discord-Mass-Reporter.git
+git clone https://github.com/xjkv/Discord-Mass-Reporter.git
 cd Discord-Mass-Reporter
 ```
 
