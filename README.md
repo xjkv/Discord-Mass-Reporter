@@ -59,19 +59,19 @@ python main.py
 ## Breadcrumb Reference
 Discord's internal reporting menu is structured as a tree of integer node IDs. Below are the validated breadcrumb paths for each report category:
 ```
-Spam:	[7, 98]
-Abuse / Verbal harassment:	[7, 76, 101]
-Abuse / Hate identity:	[7, 76, 107]
-Abuse / Gore:	[7, 76, 86, 108]
-Abuse / NSFW unwanted:	[7, 76, 86, 109]
-Abuse / Threat of violence:	[7, 76, 90, 117]
-Abuse / CSAM:	[7, 76, 86, 88, 116]
-Misinfo / Fake news: [7, 94, 95, 131]
-Something else / Underage:	[7, 80, 91, 127]
-Something else / Scam:	[7, 80, 121, 167]
-Something else / Stolen accounts:	[7, 80, 123]
-Something else / Illicit goods:	[7, 80, 124]
-Something else / Hacks cheats:	[7, 80, 126]
+Spam	                                              [7, 98]
+Abuse / Verbal harassment	                          [7, 76, 101]
+Abuse / Hate identity	                              [7, 76, 107]
+Abuse / Gore	                                      [7, 76, 86, 108]
+Abuse / NSFW unwanted	                              [7, 76, 86, 109]
+Abuse / Threat of violence	                          [7, 76, 90, 117]
+Abuse / CSAM	                                      [7, 76, 86, 88, 116]
+Misinfo / Fake news                                   [7, 94, 95, 131]
+Something else / Underage	                          [7, 80, 91, 127]
+Something else / Scam	                              [7, 80, 121, 167]
+Something else / Stolen accounts	                  [7, 80, 123]
+Something else / Illicit goods	                      [7, 80, 124]
+Something else / Hacks cheats	                      [7, 80, 126]
 ```
 
 Set BREADCRUMBS in main.py to your desired value:
